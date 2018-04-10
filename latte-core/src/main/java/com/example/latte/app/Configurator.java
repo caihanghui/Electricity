@@ -11,8 +11,7 @@ import java.util.jar.Attributes;
 
 //配置文件的存储以及获取
 public class Configurator {
-
-
+    //存储信息
     private  static  final WeakHashMap<String,Object> LATTE_CONFIGS = new WeakHashMap<>();
 
     private  Configurator(){

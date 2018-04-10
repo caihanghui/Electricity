@@ -10,20 +10,17 @@ import java.util.WeakHashMap;
  * @desc ${TODD}
  */
 //对外的工具类
-public  final  class Latte {
+public final class Latte {
 
-              public  static  Configurator init(Context context){
-                    getConfiguration().put(ConfigType.APPLICATION_CONTEXT.name(),context.getApplicationContext());
-                    return Configurator.getInstance();
+    public static Configurator init(Context context) {
+        getConfiguration().put(ConfigType.APPLICATION_CONTEXT.name(), context.getApplicationContext());
+        return Configurator.getInstance();
 
-              }
+    }
 
-
-              private  static WeakHashMap<String ,Object> getConfiguration(){
-                  return Configurator.getInstance().getLatteConfigs();
-
-              }
-
+    private static WeakHashMap<String, Object> getConfiguration() {
+        return Configurator.getInstance().getLatteConfigs();
+    }
 
 
 }
